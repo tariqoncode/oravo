@@ -1,14 +1,10 @@
 {
-  "name": "umami",
+  "name": "oravo",
   "version": "3.0.0",
-  "description": "A modern, privacy-focused alternative to Google Analytics.",
-  "author": "Umami Software, Inc. <hello@umami.is>",
+  "description": "A modern, privacy-focused analytics platform powered by AI.",
+  "author": "Oravo Analytics <oravo@imoogleai.xyz>",
   "license": "MIT",
-  "homepage": "https://umami.is",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/umami-software/umami.git"
-  },
+  "homepage": "https://oravo.imoogleai.xyz",
   "type": "module",
   "scripts": {
     "dev": "next dev -p 3001 --turbo",

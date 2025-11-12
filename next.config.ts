@@ -158,7 +158,7 @@ if (trackerScriptName) {
 if (cloudMode) {
   rewrites.push({
     source: '/script.js',
-    destination: 'https://cloud.umami.is/script.js',
+    destination: 'https://cloud.oravo.imoogleai.xyz/script.js',
   });
 }
 

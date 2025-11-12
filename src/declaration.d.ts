@@ -15,4 +15,4 @@ declare module 'react-simple-maps';
 declare module 'semver';
 declare module 'tsup';
 declare module 'uuid';
-declare module '@umami/esbuild-plugin-css-modules';
+declare module '@oravo/esbuild-plugin-css-modules';

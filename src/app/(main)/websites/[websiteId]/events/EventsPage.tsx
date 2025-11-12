@@ -11,7 +11,7 @@ import { WebsiteControls } from '@/app/(main)/websites/[websiteId]/WebsiteContro
 import { getItem, setItem } from '@/lib/storage';
 import { SessionModal } from '@/app/(main)/websites/[websiteId]/sessions/SessionModal';
 
-const KEY_NAME = 'umami.events.tab';
+const KEY_NAME = 'oravo.events.tab';
 
 export function EventsPage({ websiteId }) {
   const [tab, setTab] = useState(getItem(KEY_NAME) || 'chart');
