@@ -7,7 +7,7 @@
   "homepage": "https://oravo.imoogleai.xyz",
   "type": "module",
   "scripts": {
-    "dev": "next dev -p 3001 --turbo",
+    "dev": "next dev -p 12000 --turbo",
     "build": "npm-run-all check-env build-db check-db build-tracker build-geo build-app",
     "start": "next start",
     "build-docker": "npm-run-all build-db build-tracker build-geo build-app",
