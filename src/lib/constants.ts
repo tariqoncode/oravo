@@ -1,17 +1,17 @@
 export const CURRENT_VERSION = process.env.currentVersion;
-export const AUTH_TOKEN = 'umami.auth';
-export const LOCALE_CONFIG = 'umami.locale';
-export const TIMEZONE_CONFIG = 'umami.timezone';
-export const DATE_RANGE_CONFIG = 'umami.date-range';
-export const THEME_CONFIG = 'umami.theme';
-export const DASHBOARD_CONFIG = 'umami.dashboard';
-export const VERSION_CHECK = 'umami.version-check';
-export const SHARE_TOKEN_HEADER = 'x-umami-share-token';
-export const HOMEPAGE_URL = 'https://umami.is';
-export const DOCS_URL = 'https://umami.is/docs';
-export const REPO_URL = 'https://github.com/umami-software/umami';
-export const UPDATES_URL = 'https://api.umami.is/v1/updates';
-export const TELEMETRY_PIXEL = 'https://i.umami.is/a.png';
+export const AUTH_TOKEN = 'oravo.auth';
+export const LOCALE_CONFIG = 'oravo.locale';
+export const TIMEZONE_CONFIG = 'oravo.timezone';
+export const DATE_RANGE_CONFIG = 'oravo.date-range';
+export const THEME_CONFIG = 'oravo.theme';
+export const DASHBOARD_CONFIG = 'oravo.dashboard';
+export const VERSION_CHECK = 'oravo.version-check';
+export const SHARE_TOKEN_HEADER = 'x-oravo-share-token';
+export const HOMEPAGE_URL = 'https://oravo.imoogleai.xyz';
+export const DOCS_URL = 'https://oravo.imoogleai.xyz/docs';
+export const REPO_URL = 'https://oravo.imoogleai.xyz';
+export const UPDATES_URL = 'https://api.oravo.imoogleai.xyz/v1/updates';
+export const TELEMETRY_PIXEL = 'https://i.oravo.imoogleai.xyz/a.png';
 export const FAVICON_URL = 'https://icons.duckduckgo.com/ip3/{{domain}}.ico';
 export const LINKS_URL = `${globalThis?.location?.origin}/q`;
 export const PIXELS_URL = `${globalThis?.location?.origin}/p`;
@@ -182,13 +182,13 @@ export const ROLE_PERMISSIONS = {
 
 export const THEME_COLORS = {
   light: {
-    primary: '#2680eb',
+    primary: '#6366f1',
     text: '#838383',
     line: '#d9d9d9',
     fill: '#f9f9f9',
   },
   dark: {
-    primary: '#2680eb',
+    primary: '#6366f1',
     text: '#7b7b7b',
     line: '#3a3a3a',
     fill: '#191919',
@@ -196,18 +196,18 @@ export const THEME_COLORS = {
 } as const;
 
 export const CHART_COLORS = [
-  '#2680eb',
-  '#9256d9',
-  '#44b556',
-  '#e68619',
-  '#e34850',
-  '#f7bd12',
-  '#01bad7',
-  '#6734bc',
-  '#89c541',
-  '#ffc301',
-  '#ec1562',
-  '#ffec16',
+  '#6366f1',
+  '#8b5cf6',
+  '#10b981',
+  '#f59e0b',
+  '#ef4444',
+  '#f97316',
+  '#06b6d4',
+  '#7c3aed',
+  '#84cc16',
+  '#eab308',
+  '#ec4899',
+  '#14b8a6',
 ];
 
 export const DOMAIN_REGEX =

@@ -7,7 +7,7 @@ import { ensureArray } from '@/lib/utils';
 import redis from '@/lib/redis';
 import { getUser } from '@/queries/prisma/user';
 
-const log = debug('umami:auth');
+const log = debug('oravo:auth');
 
 export function getBearerToken(request: Request) {
   const auth = request.headers.get('authorization');

@@ -1,4 +1,4 @@
-CREATE TABLE umami.website_event_join
+CREATE TABLE oravo.website_event_join
 (
     session_id UUID,
     visit_id UUID,
@@ -8,7 +8,7 @@ CREATE TABLE umami.website_event_join
         ORDER BY (session_id, created_at)
         SETTINGS index_granularity = 8192;
 
-INSERT INTO umami.website_event_join
+INSERT INTO oravo.website_event_join
 SELECT DISTINCT
     s.session_id,
     generateUUIDv4() visit_id,
@@ -18,7 +18,7 @@ FROM (SELECT DISTINCT session_id,
     FROM website_event) s;
 
 -- create new table
-CREATE TABLE umami.website_event_new
+CREATE TABLE oravo.website_event_new
 (
     website_id UUID,
     session_id UUID,
@@ -49,7 +49,7 @@ CREATE TABLE umami.website_event_new
         ORDER BY (website_id, session_id, created_at)
         SETTINGS index_granularity = 8192;
 
-INSERT INTO umami.website_event_new
+INSERT INTO oravo.website_event_new
 SELECT we.website_id,
     we.session_id,
     j.visit_id,
@@ -74,17 +74,17 @@ SELECT we.website_id,
     we.event_name,
     we.created_at,
     we.job_id
-FROM umami.website_event we
-JOIN umami.website_event_join j
+FROM oravo.website_event we
+JOIN oravo.website_event_join j
     ON we.session_id = j.session_id
         and date_trunc('hour', we.created_at) = j.created_at
 
-RENAME TABLE umami.website_event TO umami.website_event_old;
-RENAME TABLE umami.website_event_new TO umami.website_event;
+RENAME TABLE oravo.website_event TO oravo.website_event_old;
+RENAME TABLE oravo.website_event_new TO oravo.website_event;
 
 /*
 
- DROP TABLE umami.website_event_old
- DROP TABLE umami.website_event_join
+ DROP TABLE oravo.website_event_old
+ DROP TABLE oravo.website_event_join
 
  */

@@ -9,7 +9,7 @@ import { WebsiteControls } from '@/app/(main)/websites/[websiteId]/WebsiteContro
 import { getItem, setItem } from '@/lib/storage';
 import { SessionModal } from '@/app/(main)/websites/[websiteId]/sessions/SessionModal';
 
-const KEY_NAME = 'umami.sessions.tab';
+const KEY_NAME = 'oravo.sessions.tab';
 
 export function SessionsPage({ websiteId }) {
   const [tab, setTab] = useState(getItem(KEY_NAME) || 'activity');

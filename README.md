@@ -1,33 +1,24 @@
 <p align="center">
-  <img src="https://content.umami.is/website/images/umami-logo.png" alt="Umami Logo" width="100">
+  <img src="/public/favicon-32x32.png" alt="Oravo Logo" width="100">
 </p>
 
-<h1 align="center">Umami</h1>
+<h1 align="center">Oravo</h1>
 
 <p align="center">
-  <i>Umami is a simple, fast, privacy-focused alternative to Google Analytics.</i>
+  <i>Oravo is a modern, privacy-focused analytics platform powered by AI.</i>
 </p>
 
 <p align="center">
-  <a href="https://github.com/umami-software/umami/releases">
-    <img src="https://img.shields.io/github/release/umami-software/umami.svg" alt="GitHub Release" />
-  </a>
-  <a href="https://github.com/umami-software/umami/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/umami-software/umami.svg" alt="MIT License" />
-  </a>
-  <a href="https://github.com/umami-software/umami/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/umami-software/umami/ci.yml" alt="Build Status" />
-  </a>
-  <a href="https://analytics.umami.is/share/LGazGOecbDtaIwDr/umami.is" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Try%20Demo%20Now-Click%20Here-brightgreen" alt="Umami Demo" />
-  </a>
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status" />
+  <img src="https://img.shields.io/badge/Version-3.0.0-blue" alt="Version" />
 </p>
 
 ---
 
 ## 🚀 Getting Started
 
-A detailed getting started guide can be found at [umami.is/docs](https://umami.is/docs/).
+Welcome to Oravo - your privacy-focused analytics solution!
 
 ---
 
@@ -36,17 +27,17 @@ A detailed getting started guide can be found at [umami.is/docs](https://umami.i
 ### Requirements
 
 - A server with Node.js version 18.18 or newer
-- A database. Umami supports [PostgreSQL](https://www.postgresql.org/) (minimum v12.14) databases.
+- A database. Oravo supports [PostgreSQL](https://www.postgresql.org/) (minimum v12.14) databases.
 
 ### Get the Source Code and Install Packages
 
 ```bash
-git clone https://github.com/umami-software/umami.git
-cd umami
+git clone <your-repository-url>
+cd oravo
 pnpm install
 ```
 
-### Configure Umami
+### Configure Oravo
 
 Create an `.env` file with the following:
 
@@ -66,7 +57,7 @@ postgresql://username:mypassword@localhost:5432/mydb
 pnpm run build
 ```
 
-_The build step will create tables in your database if you are installing for the first time. It will also create a login user with username **admin** and password **umami**._
+_The build step will create tables in your database if you are installing for the first time. It will also create a login user with username **admin** and password **oravo**._
 
 ### Start the Application
 
@@ -80,24 +71,15 @@ _By default, this will launch the application on `http://localhost:3000`. You wi
 
 ## 🐳 Installing with Docker
 
-To build the Umami container and start up a Postgres database, run:
+To build the Oravo container and start up a Postgres database, run:
 
 ```bash
 docker compose up -d
 ```
 
-Alternatively, to pull just the Umami Docker image with PostgreSQL support:
-
-```bash
-docker pull docker.umami.is/umami-software/umami:latest
-```
-
 ---
 
 ## 🔄 Getting Updates
-> [!WARNING]  
-> If you are updating from Umami V2, image "postgresql-latest" is deprecated. You must change it to "latest".
-> e.g., rename `docker.umami.is/umami-software/umami:postgresql-latest` to `docker.umami.is/umami-software/umami:latest`.
 
 To get the latest features, simply do a pull, install any new dependencies, and rebuild:
 
@@ -119,31 +101,20 @@ docker compose up --force-recreate -d
 ## 🛟 Support
 
 <p align="center">
-  <a href="https://github.com/umami-software/umami">
-    <img src="https://img.shields.io/badge/GitHub--blue?style=social&logo=github" alt="GitHub" />
+  <a href="mailto:oravo@imoogleai.xyz">
+    <img src="https://img.shields.io/badge/Email-oravo@imoogleai.xyz-blue?style=social&logo=gmail" alt="Email" />
   </a>
-  <a href="https://twitter.com/umami_software">
-    <img src="https://img.shields.io/badge/Twitter--blue?style=social&logo=twitter" alt="Twitter" />
-  </a>
-  <a href="https://linkedin.com/company/umami-software">
-    <img src="https://img.shields.io/badge/LinkedIn--blue?style=social&logo=linkedin" alt="LinkedIn" />
-  </a>
-  <a href="https://umami.is/discord">
-    <img src="https://img.shields.io/badge/Discord--blue?style=social&logo=discord" alt="Discord" />
+  <a href="https://oravo.imoogleai.xyz">
+    <img src="https://img.shields.io/badge/Website-oravo.imoogleai.xyz-blue?style=social&logo=web" alt="Website" />
   </a>
 </p>
 
-[release-shield]: https://img.shields.io/github/release/umami-software/umami.svg
-[releases-url]: https://github.com/umami-software/umami/releases
-[license-shield]: https://img.shields.io/github/license/umami-software/umami.svg
-[license-url]: https://github.com/umami-software/umami/blob/master/LICENSE
-[build-shield]: https://img.shields.io/github/actions/workflow/status/umami-software/umami/ci.yml
-[build-url]: https://github.com/umami-software/umami/actions
-[github-shield]: https://img.shields.io/badge/GitHub--blue?style=social&logo=github
-[github-url]: https://github.com/umami-software/umami
-[twitter-shield]: https://img.shields.io/badge/Twitter--blue?style=social&logo=twitter
-[twitter-url]: https://twitter.com/umami_software
-[linkedin-shield]: https://img.shields.io/badge/LinkedIn--blue?style=social&logo=linkedin
-[linkedin-url]: https://linkedin.com/company/umami-software
-[discord-shield]: https://img.shields.io/badge/Discord--blue?style=social&logo=discord
-[discord-url]: https://discord.com/invite/4dz4zcXYrQ
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🚀 About Oravo
+
+Oravo is a modern, privacy-focused analytics platform that combines the power of AI with user-friendly analytics. Built with performance and privacy in mind, Oravo provides comprehensive insights while respecting user privacy.

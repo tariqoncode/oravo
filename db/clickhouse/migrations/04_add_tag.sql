@@ -1,12 +1,12 @@
 -- add tag column
-ALTER TABLE umami.website_event ADD COLUMN "tag" String AFTER "event_name";
-ALTER TABLE umami.website_event_stats_hourly ADD COLUMN "tag" SimpleAggregateFunction(groupArrayArray, Array(String)) AFTER "max_time";
+ALTER TABLE oravo.website_event ADD COLUMN "tag" String AFTER "event_name";
+ALTER TABLE oravo.website_event_stats_hourly ADD COLUMN "tag" SimpleAggregateFunction(groupArrayArray, Array(String)) AFTER "max_time";
 
 -- update materialized view
-DROP TABLE umami.website_event_stats_hourly_mv;
+DROP TABLE oravo.website_event_stats_hourly_mv;
 
-CREATE MATERIALIZED VIEW umami.website_event_stats_hourly_mv
-TO umami.website_event_stats_hourly
+CREATE MATERIALIZED VIEW oravo.website_event_stats_hourly_mv
+TO oravo.website_event_stats_hourly
 AS
 SELECT
     website_id,
@@ -60,7 +60,7 @@ FROM (SELECT
     max(created_at) max_time,
     arrayFilter(x -> x != '', groupArray(tag)) tag,
     toStartOfHour(created_at) timestamp
-FROM umami.website_event
+FROM oravo.website_event
 GROUP BY website_id,
     session_id,
     visit_id,
