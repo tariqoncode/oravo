@@ -1,6 +1,6 @@
 html body {
-  --primary-color: #6366f1;
-  --primary-font-color: var(--light-color);
-  --accent-color: #8b5cf6;
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --primary-color: #000000;
+  --primary-font-color: #ffffff;
+  --accent-color: #333333;
+  --gradient-primary: linear-gradient(135deg, #000000 0%, #333333 100%);
 }

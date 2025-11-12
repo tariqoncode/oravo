@@ -182,32 +182,32 @@ export const ROLE_PERMISSIONS = {
 
 export const THEME_COLORS = {
   light: {
-    primary: '#6366f1',
-    text: '#838383',
-    line: '#d9d9d9',
-    fill: '#f9f9f9',
+    primary: '#000000',
+    text: '#666666',
+    line: '#e5e5e5',
+    fill: '#ffffff',
   },
   dark: {
-    primary: '#6366f1',
-    text: '#7b7b7b',
-    line: '#3a3a3a',
-    fill: '#191919',
+    primary: '#ffffff',
+    text: '#cccccc',
+    line: '#333333',
+    fill: '#000000',
   },
 } as const;
 
 export const CHART_COLORS = [
-  '#6366f1',
-  '#8b5cf6',
-  '#10b981',
-  '#f59e0b',
-  '#ef4444',
-  '#f97316',
-  '#06b6d4',
-  '#7c3aed',
-  '#84cc16',
-  '#eab308',
-  '#ec4899',
-  '#14b8a6',
+  '#000000',
+  '#333333',
+  '#666666',
+  '#999999',
+  '#cccccc',
+  '#1a1a1a',
+  '#4d4d4d',
+  '#808080',
+  '#b3b3b3',
+  '#e6e6e6',
+  '#262626',
+  '#595959',
 ];
 
 export const DOMAIN_REGEX =
